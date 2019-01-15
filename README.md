@@ -1,2 +1,9 @@
-# docker_tensorflow_go
-Dockerize basic tensorflow with golang environment.
+# Tensorflow with golang docker image (dockerization)
+This work is one example to build basic "tensorflow with golang" image.
+
+Golang (1.11.4) and Tensorflow cpu-linux c lib (1.12.0) will be built from offical tensorflow docker image (tensorflow/tensorflow:1.12.0) 
+
+## How to build the image
+```bash
+$ docker build -t tensorflow_go:latest -f Dockerfile .
+```
