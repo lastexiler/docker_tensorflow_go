@@ -7,3 +7,15 @@ Golang (1.11.4) and Tensorflow cpu-linux c lib (1.12.0) will be built from offic
 ```bash
 $ docker build -t tensorflow_go:latest -f Dockerfile .
 ```
+
+## How to use the docker image
+As described in the TF homepage, https://www.tensorflow.org/install/lang_c
+
+Before use the built docker image, you should create the linkage between TF c lib with your application.
+To configure the linker with ldconfig,
+```bash
+$ sudo ldconfig
+```
+
+
+
